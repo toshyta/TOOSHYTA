@@ -3,62 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تنزيل</title>
+<title>تحميل البرنامج</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
 body{
-    background:#000;
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#18a558;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
 }
 
-.container{
+.box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
     text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+    width:320px;
 }
 
-h1{
-    color:#fff;
-    font-size:60px;
-    margin-bottom:40px;
+h2{
+    color:#18a558;
+}
+
+p{
+    color:#444;
+    margin-bottom:25px;
 }
 
 button{
-    background:#22c55e;
+    background:#000;
     color:#fff;
     border:none;
-    border-radius:12px;
-    padding:18px 60px;
-    font-size:28px;
+    padding:15px 40px;
+    font-size:18px;
+    border-radius:10px;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-    background:#16a34a;
+    background:#333;
 }
 </style>
-
 </head>
+
 <body>
 
-<div class="container">
-    <h1>تنزيل</h1>
-    <button onclick="download()">بدء التنزيل</button>
+<div class="box">
+    <h2>تنزيل البرنامج</h2>
+    <p>اضغط على الزر للانتقال إلى صفحة التنزيل.</p>
+
+    <button onclick="goDownload()">متأكد</button>
 </div>
 
 <script>
-function download() {
-    if (confirm("هل أنت متأكد من بدء التنزيل؟")) {
-        window.location.href = "https://www.360totalsecurity.com/en/download-free-antivirus/";
-    }
+function goDownload(){
+    window.location.href="https://www.360totalsecurity.com/en/download-free-antivirus/";
 }
 </script>
 
