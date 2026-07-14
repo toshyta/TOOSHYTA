@@ -2,19 +2,58 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>تنزيل البرنامج</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:#fff;
+    font-size:60px;
+    margin-bottom:40px;
+}
+
+.download-btn{
+    display:inline-block;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    padding:18px 60px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.download-btn:hover{
+    background:#16a34a;
+}
+</style>
+
 </head>
+
 <body>
 
-<button onclick="download()">تنزيل 360 Total Security</button>
+<div class="container">
+    <h1>تنزيل</h1>
 
-<script>
-function download() {
-    if (confirm("هل تريد بدء تنزيل البرنامج؟")) {
-        window.location.href = "رابط_التحميل_المباشر";
-    }
-}
-</script>
+    <a class="download-btn"
+       href="ضع_رابط_التحميل_المباشر_هنا">
+       تنزيل البرنامج
+    </a>
+</div>
 
 </body>
 </html>
